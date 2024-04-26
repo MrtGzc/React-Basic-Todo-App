@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.appContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+/*  AddTodos */
+
+.addTodosContainer{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+}
+
+.addTodosContainer form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addTodosContainer form textarea{
+  width: 100%;
+  border-radius: 10px;
+  padding: .5rem;
+  outline: none;
+  word-wrap: break-word;
+}
+
+.addTodosContainer form p{
+  margin-top: 1rem;
+}
+
+.addTodosContainer form button{
+  margin-top: 1rem;
+  border: none;
+  background-color: rgb(9, 164, 11);
+  color: white;
+  padding: .8rem;
+  font-size: large;
+  border-radius: 10px;
+}
+
+/*  AddTodos */
+
+/*  Todos */
+
+.todosContainer{
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/*  Todos */
+
+
+/*  Todo */
+
+.todoContainer{
+  width: 20%;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.todoContainer h3{
+  margin-top: 1.5rem;
+}
+
+.todoContainer .buttons button{
+  margin: 1rem .5rem;
+  padding: .6rem 1.5rem;
+  border: none;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+.todoContainer .buttons .deleteBtn{
+  background-color: red;
+}
+
+.todoContainer .buttons .updateBtn{
+  background-color: blue;
+}
+
+textarea{
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: .5rem;
+  width: 100%;
+  outline: none;
+  
+}
+/*  Todo */
+
+
+/* Ekran boyutlarına göre düzenlemeler */
+
+/* Küçük ekranlar için */
+@media only screen and (max-width: 600px) {
+  .appContainer {
+    margin: 0;
+  }
+
+  .addTodosContainer {
+    width: 90%;
+  }
+
+  .todoContainer {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+/* Orta ekranlar için */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .appContainer {
+    margin: 0;
+  }
+
+  .addTodosContainer {
+    width: 70%;
+  }
+
+  .todoContainer {
+    width: 45%;
+    margin: 1rem;
+  }
+}
